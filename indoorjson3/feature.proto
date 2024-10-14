@@ -1,0 +1,18 @@
+syntax = "proto3";
+package indoorjson3;
+
+message Envelope {
+  float minx = 1;
+  float maxx = 2;
+  float miny = 3;
+  float maxy = 4;
+}
+
+message Feature {
+  string id = 1;
+  string name = 2;
+  string desc = 3;
+  string ext_ref = 4;
+  Envelope envelope = 5;
+  string properties = 6;  // a json object
+}

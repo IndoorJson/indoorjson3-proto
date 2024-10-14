@@ -1,0 +1,17 @@
+syntax = "proto3";
+package indoorjson3;
+
+import "indoorjson3/feature.proto";
+import "indoorjson3/connection.proto";
+
+message RLine {
+  ConnRef fr = 1;
+  ConnRef to = 2;
+}
+
+message RLines {
+  Feature base = 1;
+  repeated ConnRef ins = 2;
+  repeated ConnRef outs = 3;
+  repeated RLine closure = 4;
+}

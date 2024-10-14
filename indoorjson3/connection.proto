@@ -1,0 +1,21 @@
+syntax = "proto3";
+package indoorjson3;
+
+import "indoorjson3/feature.proto";
+import "indoorjson3/geometry.proto";
+import "indoorjson3/cell.proto";
+
+message Connection {
+  Feature base = 1;
+  CellRef fr = 2;
+  CellRef to = 3;
+  Geometry bound = 4;
+  Geometry edge = 5;
+}
+
+message ConnRef {
+  oneof Ref {
+    Connection conn = 1;
+    string conn_id = 2;
+  }
+}

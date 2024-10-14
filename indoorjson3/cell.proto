@@ -1,0 +1,18 @@
+syntax = "proto3";
+package indoorjson3;
+
+import "indoorjson3/feature.proto";
+import "indoorjson3/geometry.proto";
+
+message Cell {
+  Feature base = 1;
+  Geometry space = 2;
+  Geometry node = 3;
+}
+
+message CellRef {
+  oneof Ref {
+    Cell cell = 1;
+    string cell_id = 2;
+  }
+}
