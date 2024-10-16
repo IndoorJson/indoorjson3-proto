@@ -5,7 +5,7 @@ import "indoorjson3_proto/feature.proto";
 import "indoorjson3_proto/cell.proto";
 import "indoorjson3_proto/connection.proto";
 import "indoorjson3_proto/layer.proto";
-import "indoorjson3_proto/rlines.proto";
+import "indoorjson3_proto/r_lines.proto";
 
 message IndoorFeatures {
   Feature base = 1;

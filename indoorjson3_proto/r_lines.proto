@@ -4,6 +4,7 @@ package indoorjson3_proto;
 import "indoorjson3_proto/feature.proto";
 import "indoorjson3_proto/connection.proto";
 
+// representative line
 message RLine {
   ConnRef fr = 1;
   ConnRef to = 2;
