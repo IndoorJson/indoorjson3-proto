@@ -1,0 +1,10 @@
+syntax = "proto3";
+package indoorjson3_proto;
+
+import "indoorjson3_proto/feature.proto";
+import "indoorjson3_proto/cell.proto";
+
+message Layer {
+  Feature base = 1;
+  repeated CellRef cells = 2;
+}

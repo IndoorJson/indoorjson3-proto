@@ -1,8 +1,8 @@
 syntax = "proto3";
-package indoorjson3;
+package indoorjson3_proto;
 
-import "indoorjson3/feature.proto";
-import "indoorjson3/connection.proto";
+import "indoorjson3_proto/feature.proto";
+import "indoorjson3_proto/connection.proto";
 
 message RLine {
   ConnRef fr = 1;

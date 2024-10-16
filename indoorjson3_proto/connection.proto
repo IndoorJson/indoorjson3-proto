@@ -1,9 +1,9 @@
 syntax = "proto3";
-package indoorjson3;
+package indoorjson3_proto;
 
-import "indoorjson3/feature.proto";
-import "indoorjson3/geometry.proto";
-import "indoorjson3/cell.proto";
+import "indoorjson3_proto/feature.proto";
+import "indoorjson3_proto/geometry.proto";
+import "indoorjson3_proto/cell.proto";
 
 message Connection {
   Feature base = 1;

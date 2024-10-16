@@ -1,5 +1,5 @@
 syntax = "proto3";
-package indoorjson3;
+package indoorjson3_proto;
 
 message Geometry {
   string wkt = 1;
